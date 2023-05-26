@@ -20,15 +20,12 @@ public abstract class Tree<T extends Comparable<T>> {
 
     protected abstract String toStringAux
             (String prefix, String root, String left, String right);
-    //Metodo che gestisce la parte NON pubblica della stampa.
-    //Non forniamo spiegazioni sul suo funzionamento, non e' essenziale
+    
 
     public String toString() {
         return toStringAux("", "___", "   ", "   ");
     }
- /* Trascrizione albero --> stringa. Ogni albero viene trascritto in
-stringa dall’alto verso il basso, con i sottoalberi disegnati piu' a
-destra dell’albero di cui fan parte */
+
 }
 //end class Tree
 
