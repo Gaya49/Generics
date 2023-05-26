@@ -73,9 +73,7 @@ public class Branch<T extends Comparable<T>> extends Tree<T> {
             }
     }
 
-    //Metodo che gestisce la parte NON pubblica della stampa.
-    //Non forniamo spiegazioni sul suo funzionamento, non e'
-    //essenziale.
+    
     protected String toStringAux
     (String prefix, String root, String left, String right) {
         return this.left.toStringAux(prefix + left, "   /", "   ", "  ¦")
